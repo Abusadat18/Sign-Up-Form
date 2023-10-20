@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: LOGOFONT;
+  src: url(./Norse-Bold.otf);
+}
+
+body {
+  width: 100vw;
+  height: 125vh;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.col1 {
+  background-image: url(./blue-2885289_1280.jpg);
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.col1 div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 5px 0;
+  background-color: #00000055;
+}
+
+.col1 div h1 {
+  display: flex;
+  align-items: center;
+  font-family: LOGOFONT;
+  font-size: 100px;
+  color: #fff;
+}
+
+.top-logo {
+  height: 150px;
+}
+
+.col2 {
+  background-color: rgba(128, 128, 128, 0.062);
+}
+
+.col2-header {
+  padding: 120px 50px 50px;
+}
+
+.col2-header h3:last-child {
+  margin-top: 30px;
+}
+
+.col2-main {
+  padding: 20px 50px 50px;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #e5e7eb;
+}
+
+form {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: space-between;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  margin-top: 25px;
+  row-gap: 30px;
+}
+
+.firstName-container,
+.lastName-container,
+.email-container,
+.phone-container,
+.password-container,
+.password-check-ctn {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+}
+
+input {
+  width: 275px;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid #e5e7eb;
+  outline: none;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid rgb(0, 149, 255);
+  box-shadow: 4px 4px 5px #e5e7eb;
+}
+
+.error {
+  border-color: red;
+}
+
+.col2-footer {
+  padding: 40px 50px 0;
+}
+
+.create-btn {
+  padding: 15px 60px;
+  margin-bottom: 20px;
+  background-color: #5fa6d8;
+  border-radius: 10px;
+  font-size: 16px;
+  color: whitesmoke;
+  font-weight: bolder;
+  cursor: pointer;
+  border: none;
+}
+
+.create-btn:hover {
+  background-color: #5fa6d8c7;
+}
+
+.col2-footer a {
+  color: #5fa6d8;
+  text-decoration: none;
+}
+
+.col2-footer a:hover {
+  color: #5fa6d8c7;
+}
+
+.password-container {
+  position: relative;
+}
+
+.warning {
+  letter-spacing: normal;
+  color: red;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
