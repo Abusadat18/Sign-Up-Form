@@ -25,7 +25,7 @@
       </div>
       <div class="col2-main">
         <h3>Let's do this!</h3>
-        <form action="#">
+        <form action="#" id="myForm">
           <div class="firstName-container">
             <label for="firstName">FIRST NAME</label>
             <input type="text" name="firstName" id="firstName" required />
@@ -44,17 +44,17 @@
           </div>
           <div class="password-container">
             <label for="password">PASSWORD</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" required />
             <p class="warning">*Passwords do not match</p>
           </div>
           <div class="password-check-ctn">
             <label for="rePassword">CONFIRM PASSWORD</label>
-            <input type="password" name="rePassword" id="rePassword" />
+            <input type="password" name="rePassword" id="rePassword" required />
           </div>
         </form>
       </div>
       <div class="col2-footer">
-        <button class="create-btn">Create Account</button>
+        <button form="myForm" class="create-btn">Create Account</button>
         <p>Already have an account?<a href="#"> Log in</a></p>
       </div>
     </div>

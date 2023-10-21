@@ -19,10 +19,12 @@ if (passwordValue === rePasswordValue) {
     password.classList.remove("error");
     rePassword.classList.remove("error");
     warningText.classList.remove("show")
+    createBtn.setAttribute("form","myForm")
 } else {
     password.classList.add("error");
     rePassword.classList.add("error");
-    warningText.classList.add("show")
+    warningText.classList.add("show");
+    createBtn.removeAttribute("form");
 }
 })
 
